@@ -39,6 +39,11 @@ function ThreadCard({
   comments,
   isComment,
 }: Props) {
+
+  if (!author) {
+    // Return a placeholder or handle the case when author is missing
+    return <div>No author information available</div>;
+  }
   return (
     <article
       className={`flex w-full flex-col rounded-xl ${
