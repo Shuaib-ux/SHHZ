@@ -11,9 +11,9 @@ function Topbar() {
       </Link>
 
       
-        {/* <p className='text-heading3-bold text-light-1 max-xs:hidden'>Topicanon</p> 
+        {/* <p className='text-heading3-bold text-light-1 max-xs:hidden'>Topicanon</p> */}
 
-      {/* <div className='flex items-center gap-1'>
+      <div className='flex items-center gap-1'>
         <div className='block md:hidden'>
           <SignedIn>
             <SignOutButton redirectUrl="/sign-in">
@@ -32,12 +32,12 @@ function Topbar() {
         <OrganizationSwitcher
           appearance={{
             baseTheme: dark,
-            elements: {
-              organizationSwitcherTrigger: "py-2 px-4",
-            },
+            // elements: {
+            //   organizationSwitcherTrigger: "py-2 px-4",
+            // },
           }}
         />
-      </div> */}
+      </div> 
     </nav>
   );
 }
