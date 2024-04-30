@@ -5,29 +5,32 @@ import Link from "next/link";
 
 function Topbar() {
   return (
-    <nav className='topbar'>
-      <Link href='/' className='flex items-center '>
-        <Image src='assets/logo1.svg' alt='logo' width={64} height={64} />
-      </Link>
+    <nav className="topbar">
+      <a href="/">
+        <Image src="/assets/logo1.svg" alt="logo" width={64} height={64} />
+      </a>
 
-      
-        {/* <p className='text-heading3-bold text-light-1 max-xs:hidden'>Topicanon</p> */}
+      {/* <p className='text-heading3-bold text-light-1 max-xs:hidden'>Topicanon</p> */}
 
-      <div className='flex items-center gap-1'>
-        <div className='block md:hidden'>
-          <SignedIn>
-            <SignOutButton redirectUrl="/sign-in">
-              <div className='flex cursor-pointer'>
-                <Image
-                  src='/assets/logout.svg'
-                  alt='logout'
-                  width={24}
-                  height={24}
-                />
-              </div>
-            </SignOutButton>
-          </SignedIn>
-        </div> 
+      <div className="flex items-center gap-1">
+        <div className="block md:hidden">
+          <div className="mt-10 px-6">
+            {/* <SignedIn>
+          <SignOutButton redirectUrl="/sign-in">
+            <div className='flex cursor-pointer gap-4 p-4'>
+              <Image
+                src='/assets/logout.svg'
+                alt='logout'
+                width={24}
+                height={24}
+              />
+
+              <p className='text-light-2 max-lg:hidden'>Logout</p>
+            </div>
+          </SignOutButton>
+        </SignedIn> */}
+          </div>
+        </div>
 
         <OrganizationSwitcher
           appearance={{
@@ -37,7 +40,7 @@ function Topbar() {
             // },
           }}
         />
-      </div> 
+      </div>
     </nav>
   );
 }
