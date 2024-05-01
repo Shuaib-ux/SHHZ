@@ -43,25 +43,25 @@ function ProfileHeader({
         {accountId === authUserId && type !== "Community" && (
           <>
             <Link href="/profile/edit">
-              <div className="flex cursor-pointer gap-3 rounded-lg bg-dark-3 px-4 py-2">
+              <div className="flex cursor-pointer gap-3 rounded-lg bg-dark-6 ">
                 <Image
                   src="/assets/edit.svg"
                   alt="logout"
-                  width={20}
-                  height={20}
+                  width={24}
+                  height={24}
                 />
 
                 <p className="text-light-2 max-sm:hidden">Edit</p>
               </div>
             </Link>
             <Link href="/profile/settings">
-              <div className="flex cursor-pointer gap-3 rounded-lg bg-dark-3 px-4 py-2">
+              <div className="flex cursor-pointer gap-3 rounded-lg bg-dark-6 ">
                 <Image
                   src="/assets/settings.svg"
                   alt="logout"
-                  width={20}
-                  height={20}
-                  className="object-contain"
+                  width={24}
+                  height={24}
+                  
                 />
                 <p className="text-light-2 max-sm:hidden">Settings</p>
               </div>
